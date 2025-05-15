@@ -1,0 +1,86 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.App {
+  background-color: rgb(51, 170, 170);
+  font-family: sans-serif;
+  text-align: center;
+}
+.wrapper{
+  display=flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.wrapper > *{
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px; 
+}
+.header{
+  background: rgb(178, 31, 5);
+  height: 80px;
+}
+.nav{
+  background: rgb(251, 88, 7);
+  height: 80px;
+}
+.footer{
+  background: rgb(1, 252, 97);
+  height: 80px;
+}
+.main{
+  background: rgb(246, 195, 9);
+  height: 130px;
+  text-align: center;
+}
+.aside{
+  background: rgb(153, 238, 6);
+}
+
+.button {
+  background-color: #81d9ef;
+  border: 2px solid #007acc;
+  color: #000266;
+  padding: 0.75rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-block {
+  display: block;
+  margin-top: 10px; /* Puoi aggiungere un margine sopra, se necessario */
+}
+
+.button:hover {
+  background-color: violet;
+}
+
+.main{
+  
+}
+
+@media all and(min-width:800px){
+  .main{
+    flex:2;
+  }
+  .aside{
+    order:2;
+  }
+  .main{
+    order:1;
+  }
+  .footer{
+    order:4;
+  }
+  
+}
+@media all and(min-width:600px){
+  .aside{
+    flex:1;
+  }
+}
